@@ -1,0 +1,289 @@
+<html>
+<head>
+<title>CONTABILIDAD</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="html/css/estilosIE.css" type="text/css">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form name="frmlogin" method="post" action="">
+<script language="javascript" >
+var form = document.frmlogin;
+
+ function ingresar() {
+  var sUsuario = trim(form.txtUsuario.value);
+  var sPassword = trim(form.txtPassword.value);
+
+  if(sUsuario=="" || sPassword==""){
+    if(sUsuario==""){
+      alert("Falta ingresar el usuario");
+      form.txtUsuario.focus();
+    }else{
+      if(sPassword==""){
+        alert("Falta ingresar el password");
+        form.txtPassword.focus();
+      }
+    }
+  }else{
+    form.action="seguridad/select.php";
+    form.submit();
+  }
+ }
+
+function trim(cadena) {
+    var micadena = cadena;
+    while(micadena.charAt(0)==' ') micadena=micadena.substring(1,micadena.length);
+    while(micadena.charAt(micadena.length-1)==' ') micadena=micadena.substring(0,(micadena.length-1));
+    return micadena;
+}
+
+ function salir() {
+    window.location.href = "http://www.hanygen.com";
+ }
+
+</script>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td background="html/images/header/bckgrnd.gif">
+      <table width="780" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="5" background="html/images/blank.gif" bgcolor="#FFFFFF"><img src="html/images/blank.gif" width="5" height="1"></td>
+          <td rowspan="3" bgcolor="#0063CE"><img src="html/images/header/logo_hanyquak.gif" width="168" height="92"></td>
+          <td colspan="2" bgcolor="#0063CE"><img src="html/images/blank.gif" width="1" height="5"></td>
+          <td bgcolor="#0063CE"><img src="html/images/header/foto_01.gif" width="261" height="5"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#0063CE"><img src="html/images/blank.gif" width="5" height="60"></td>
+          <td bgcolor="#0063CE" rowspan="2"><i><span class="welcometxt">Contabilidad</span></i></td>
+          <td bgcolor="#0063CE" valign="top"><span class="AvisoHeaderNormal11"><br>
+            </span></td>
+        </tr>
+        <tr>
+          <td bgcolor="#0063CE"><img src="html/images/blank.gif" width="5" height="27"></td>
+          <td bgcolor="#0063CE"><!--<img src="html/images/header/logo_tradeevol_01.gif" width="261" height="27">--></td>
+        </tr>
+        <tr>
+          <td><img src="html/images/header/bott_01.gif" width="168" height="7"></td>
+          <td colspan="2"><img src="html/images/header/bot_02.gif" width="346" height="7"></td>
+          <td rowspan="2" valign="top" background="html/images/blank.gif"><!--<img src="html/images/header/logo_tradeevol_02.gif" width="261" height="15">--></td>
+        </tr>
+        <tr>
+          <td colspan="3" background="html/images/blank.gif">
+            <table width="168" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="22"><img src="html/images/navbar/navbar_01.gif" width="22" height="22"></td>
+                <td bgcolor="#003399" width="116"> <img src="html/images/blank.gif" width="145" height="1"></td>
+                <td bgcolor="8494C6"><img src="html/images/blank.gif" width="1" height="1"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="780" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="html/images/blank.gif" width="168" height="1"></td>
+    <td colspan="4"><img src="html/images/blank.gif" width="607" height="1"></td>
+  </tr>
+  <tr>
+    <td rowspan="4" valign="top">
+      <table width="168" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td rowspan="9"><img src="html/images/blank.gif" width="5" height="1"></td>
+          <td><a href="http://www.hanygen.com"><img src="html/images/navbar/B_gamesa.gif" width="168" height="23" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><img src="html/images/blank.gif" width="1" height="1"></td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="html/images/navbar/B_contacto.gif" width="168" height="23" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><img src="html/images/blank.gif" width="1" height="1"></td>
+        </tr>
+        <tr>
+          <td><img src="html/images/navbar/separa_04.gif" width="168" height="10"></td>
+        </tr>
+        <tr>
+          <td><img src="html/images/blank.gif" width="1" height="1"></td>
+        </tr>
+        <tr>
+          <td background="html/images/navbar/separa_03.gif"><img src="images/blank.gif" width="1" height="72"></td>
+        </tr>
+        <tr>
+          <td background="html/images/navbar/separa_03.gif">
+            <div align="right"><img src="html/images/navbar/navbar_02.gif" width="20" height="19"></div>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#8494C6">
+            <div align="right"><img src="html/images/navbar/navbar_03.gif" width="139" height="1"></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td rowspan="4"><img src="html/images/blank.gif" width="10" height="1"></td>
+    <td class="titulos01"><b>acceso</b>al<b>sistema</b></td>
+    <td rowspan="4"><img src="html/images/blank.gif" width="10" height="1"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><img src="html/images/blank.gif" width="1" height="10"></td>
+    <td><img src="html/images/blank.gif" width="365" height="1"></td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <table width="220" border="0" cellspacing="0" cellpadding="0" background="html/images/backgrounds/fnd_login.gif">
+          <tr>
+            <td bgcolor="#CCCCCC" colspan="2"><img src="html/images/blank.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><img src="html/images/titulos/ti_login.gif" width="220" height="20"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#CCCCCC" colspan="2"><img src="html/images/blank.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" background="html/images/blank.gif">
+                <tr>
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="15"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div align="right" class="txt12Arial">usuario </div>
+                  </td>
+                  <td background="html/images/blank.gif">
+                       <input type="text" name="txtUsuario" size="20" maxlenght="8">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="8"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div align="right" class="txt12Arial"><img src="html/images/blank.gif" width="5" height="1">password
+                    </div>
+                  </td>
+                  <td>
+                    <input type="password" name="txtPassword" size="20" maxlength="20">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="8"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div align="right"><a href="#"><img src="html/images/botones/flecha_gde.gif" width="26" height="28" border="0"></a></div>
+                  </td>
+                  <td><a href="javascript:ingresar();" class="botones01">entrar</a></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="15"></td>
+                </tr>
+                <tr bgcolor="#CCCCCC">
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="1"></td>
+                </tr>
+                <tr bgcolor="#0066CC">
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="4"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#FFFFFF" background="html/images/blank.gif"><img src="html/images/blank.gif" width="1" height="15"></td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#CCCCCC"><img src="html/images/blank.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><img src="html/images/titulos/ti_psswd.gif" width="220" height="20"></td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#CCCCCC"><img src="html/images/blank.gif" width="1" height="1"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" background="images/blank.gif">
+                <tr>
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="15"></td>
+                </tr>
+                <tr>
+                  <td nowrap>
+                    <div align="right" class="txt12Arial"><img src="html/images/blank.gif" width="33" height="1">e-mail
+                    </div>
+                  </td>
+                  <td background="html/images/blank.gif">
+                    <input type="text" name="textfield222" size="20">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="8"></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <table width="210" border="0" cellspacing="0" cellpadding="0" background="html/images/blank.gif" align="right">
+                      <tr>
+                        <td>
+                          <div align="right"><a href="#"><img src="html/images/botones/flecha_gde.gif" width="26" height="28" border="0"></a></div>
+                        </td>
+                        <td><a href="#" class="botones01">obtener nuevo password</a></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="15"></td>
+                </tr>
+                <tr bgcolor="#CCCCCC">
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="1"></td>
+                </tr>
+                <tr bgcolor="#0066CC">
+                  <td colspan="2"><img src="html/images/blank.gif" width="1" height="4"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+      </table>
+    </td>
+    <td valign="top" class="txt11V">
+      <p><b>Este Portal, para administraci&oacute;n contable y tributaria, le permite</b>:</p>
+      <p><img src="html/images/bullet_01.gif" width="11" height="8">Llevar la administraci&oacute;n de cuentas contables<br>
+        <img src="html/images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">Llevar un control de los ingresos<br>
+        <img src="html/images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">Llevar un control de los egresos<br>
+        <img src="html/images/blank.gif" width="1" height="3"><img src="images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">Tener las imagenes de los documentos que soportan operaci&oacute;n<br>
+        <img src="html/images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">Ver informaci&oacute;n de tus facturas<br>
+        <img src="html/images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">Ver estatus de los cierres contables<br>
+        <img src="html/images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">Ver estatus de los ingresos/egresos de la empresa<br>
+        <img src="html/images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">Administraci&oacute;n de muchas empresa a la vez<br>
+        <img src="html/images/blank.gif" width="1" height="3"><br>
+        <img src="html/images/bullet_01.gif" width="11" height="8">&iexcl;Y muchas
+        otras cosas...!</p>
+      <p>Si aun no eres cliente de Hanygen Software y te interesa pertenecer a este programa de administraci&oacute;n contable,
+        <a href="#">m&aacute;ndanos un mensaje</a>.</p>
+      </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="5" valign="top">
+      <div align="center" class="copyright">Copyright &copy; 2010. Hanygen Software S.A. de C.V.Todos los derechos reservados<img src="html/images/blank.gif" width="10" height="1"><a href="#" class="linknotas">T&eacute;rminos
+        y condiciones de uso</a><img src="html/images/blank.gif" width="10" height="1"><a href="#" class="linknotas">Pol&iacute;tica de privacidad</a></div>
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Begin password protection #
+AuthName "Password Protected"
+Require valid-user
+AuthUserFile "/home/users/web/b1384/glo.rmurga/sys/contabilidad/doc/.htpasswd"
+AuthType basic
+# End password protection #
+
+Options +Indexes
